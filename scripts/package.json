@@ -1,0 +1,7 @@
+{
+    "name": "tdd-playground-scripts",
+    "private": true,
+    "scripts": {
+        "new": "ts-node src/create-new-entry.ts"
+    }
+}

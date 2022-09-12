@@ -1,0 +1,4 @@
+{
+    "extends": "./.virmator/tsconfig-base.json",
+    "exclude": ["scripts"]
+}

@@ -1,0 +1,30 @@
+{
+    "name": "tdd-playground",
+    "private": true,
+    "description": "Test Driven Development playground",
+    "homepage": "https://github.com/electrovir/tdd-playground",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/electrovir/tdd-playground"
+    },
+    "license": "MIT",
+    "author": {
+        "name": "electrovir",
+        "url": "https://github.com/electrovir"
+    },
+    "scripts": {
+        "compile": "rm -rf dist && tsc --project tsconfig.json",
+        "format": "virmator format",
+        "new": "cd scripts && npm run new",
+        "spellcheck": "virmator spellcheck",
+        "start": "npm install && vite --force --config .virmator/vite/vite.config.ts",
+        "test": "virmator test",
+        "test:full": "npm run test:types && npm test && npm run spellcheck && virmator format check",
+        "test:types": "tsc --noEmit"
+    },
+    "devDependencies": {
+        "@types/chai": "4.3.3",
+        "@types/mocha": "9.1.1",
+        "virmator": "3.0.6"
+    }
+}
