@@ -1,5 +1,5 @@
-import {assert} from 'chai';
 import {describe, it} from 'mocha';
+import {assertOutput} from '../test-helpers/assert-function-output';
 import {toJadenCase} from './jaden-casing-strings';
 
 describe(toJadenCase.name, () => {
@@ -25,7 +25,7 @@ describe(toJadenCase.name, () => {
         ];
 
         testCases.forEach((testCase) => {
-            assert.strictEqual(toJadenCase(testCase.input), testCase.expect);
+            assertOutput(toJadenCase, testCase.expect, testCase.input);
         });
     });
 });

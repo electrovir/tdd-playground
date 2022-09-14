@@ -26,5 +26,8 @@
         "@types/chai": "4.3.3",
         "@types/mocha": "9.1.1",
         "virmator": "3.0.6"
+    },
+    "dependencies": {
+        "augment-vir": "2.5.1"
     }
 }
