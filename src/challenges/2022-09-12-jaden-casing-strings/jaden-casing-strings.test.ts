@@ -1,5 +1,5 @@
 import {describe, it} from 'mocha';
-import {assertOutput} from '../test-helpers/assert-function-output';
+import {assertOutput} from '../../test-helpers/assert-function-output';
 import {toJadenCase} from './jaden-casing-strings';
 
 describe(toJadenCase.name, () => {

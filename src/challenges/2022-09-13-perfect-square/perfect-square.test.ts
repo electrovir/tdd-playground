@@ -1,5 +1,5 @@
 import {describe, it} from 'mocha';
-import {assertOutput} from '../test-helpers/assert-function-output';
+import {assertOutput} from '../../test-helpers/assert-function-output';
 import {isPerfectSquare} from './perfect-square';
 
 describe(isPerfectSquare.name, () => {
