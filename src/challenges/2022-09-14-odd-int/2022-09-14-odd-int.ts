@@ -1,6 +1,6 @@
 import {getObjectTypedKeys} from 'augment-vir';
 
-// https://www.codewars.com/kata/LINK_HERE
+// https://www.codewars.com/kata/54da5a58ea159efa38000836
 export function oddInt(input: number[]): number | undefined {
     const instanceCounts: Record<number, number> = {};
     input.forEach((entry) => {
