@@ -3,5 +3,5 @@ export function arrayDiff(
     startingArray: ReadonlyArray<number>,
     removeTheseValues: ReadonlyArray<number>,
 ): ReadonlyArray<number> {
-    return startingArray;
+    return startingArray.filter((startingEntry) => !removeTheseValues.includes(startingEntry));
 }
