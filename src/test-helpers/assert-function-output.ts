@@ -17,14 +17,14 @@ export function assertOutput<FunctionToCallGeneric extends (...args: any[]) => a
     if (isPromiseLike(result)) {
         return new Promise<void>(async (resolve, reject) => {
             try {
-                assert.strictEqual(await result, expectedOutput, failureMessage);
+                assert.deepStrictEqual(await result, expectedOutput, failureMessage);
                 resolve();
             } catch (error) {
                 reject(error);
             }
         }) as ReturnType<typeof functionToCall> extends Promise<any> ? Promise<void> : void;
     } else {
-        assert.strictEqual(result, expectedOutput, failureMessage);
+        assert.deepStrictEqual(result, expectedOutput, failureMessage);
         return undefined as ReturnType<typeof functionToCall> extends Promise<any>
             ? Promise<void>
             : void;
